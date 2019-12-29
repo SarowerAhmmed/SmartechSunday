@@ -5,13 +5,13 @@ import org.testng.annotations.Test;
 
 public class ParameterTesting {
 
-
-
 	@Test
 	@Parameters("browser") // browser =fire,chrom,safari
-	public void getbrowser(String a) {
-
-		System.out.println(a);
+	public void getbrowser(String browserValue) {
+		//browserValue=browser
+		
+		
+		System.out.println(browserValue);
 
 	}
 
