@@ -6,9 +6,9 @@
       <class name="com.generic.library.BaseLogin"/>
     </classes>
   </test> <!-- Test -->
-  <test  name="Test2">
+ <!--  <test  name="Test2">
     <classes>
       <class name="com.generic.library.BaseLogin"/>
     </classes>
-  </test> <!-- Test -->
+  </test> Test -->
 </suite> <!-- Suite -->
