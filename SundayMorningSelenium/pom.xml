@@ -190,7 +190,7 @@
 					<!-- <parallel>classes</parallel> <useUnlimitedThreads>true</useUnlimitedThreads> -->
 					<!-- <includes> <include>**/*Runner.java</include> </includes> -->
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>Cucumbertestng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 

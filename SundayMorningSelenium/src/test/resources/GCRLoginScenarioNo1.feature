@@ -3,11 +3,11 @@ Feature: Login validation
 
 	Description :requirement 
 
-Background: 
-	Given User need to open a browser 
+#Background: 
+	 
 @TC_001_to_TC_07
 Scenario: Successfully login with valid credential 
-
+	Given User need to open a browser
 	And Pass the URL 
 	When Click my account 
 	And put email 
