@@ -18,7 +18,7 @@ public class ExcelColumnMap {
 		FileInputStream file= new FileInputStream(path);
 		XSSFWorkbook workbook=new XSSFWorkbook(file);
 		XSSFSheet sheet= workbook.getSheetAt(0);
-		Map<String,String> map= new HashMap<>();
+		Map<String,String> mymap= new HashMap<>();
 		int RowCount= sheet.getPhysicalNumberOfRows();
 		
 		//System.out.println("Total Rows Number::"+ RowCount); 
@@ -32,18 +32,27 @@ public class ExcelColumnMap {
 				if(cell!=null) {				
 					DataFormatter df= new DataFormatter();
 					
-					map.put(df.formatCellValue(row.getCell(0)),df.formatCellValue(row.getCell(1)));
+					mymap.put(df.formatCellValue(row.getCell(0)),df.formatCellValue(row.getCell(1)));
 				}}}}
-		return map;	
+		return mymap;	
 		
 	}
 	
 	public static void main(String[] args) throws Throwable {
 		
-		Map<String,String> testData=ExcelColumnMap.columnValueMap("./TestData/ConfigData.xlsx");
-		System.out.println(testData.get("URL"));
-		System.out.println(testData.get("user"));
-		System.out.println(testData.get("pass"));
+		
+		Map<String,String> mymap=ExcelColumnMap.columnValueMap("./TestData/ConfigData.xlsx");
+		
+		System.out.println(mymap.values());
+		
+		
+		//Map<String,String> testData=ExcelColumnMap.columnValueMap("./TestData/ConfigData.xlsx");
+	
+		
+		
+//		System.out.println(testData.get("URL"));
+//		System.out.println(testData.get("user"));
+//		System.out.println(testData.get("pass"));
 	
 	}
 

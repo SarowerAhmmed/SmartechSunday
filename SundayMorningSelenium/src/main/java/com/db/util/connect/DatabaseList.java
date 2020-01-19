@@ -13,10 +13,11 @@ public class DatabaseList {
 
 	
 	
-	public static void main(String[] args) {
-		String quary="select * from employees";
-		System.out.println(DatabaseList.getDataTableColumn(quary,"SALARY"));
+	public static void main(String[] args) throws SQLException {
+		//String quary="select * from employees";
+		//System.out.println(DatabaseList.getDataTableColumn(quary,"SALARY"));
 		
+		testResult("TC_002", "Description", "Req", "Application", "P/F");
 	}
 	
 	
@@ -90,7 +91,7 @@ public class DatabaseList {
 				e.printStackTrace();
 			}
 			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1522/orcl", "hr", "sarower");
-			String table = "TEST_RESULT";
+			String table = "automation_result";
 			
 			
 			String query = "INSERT INTO "

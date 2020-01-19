@@ -60,7 +60,9 @@ public class ReadWholeTable {
 	public static void main(String[] args) throws Throwable {
 
 
-		String query="Select * from employees";
+		String query="Select * from employees "
+				+ "where salary= (Select max(salary) from employees)";
+				
 		
 		ReadWholeTable.getDataTableColumn(query);
 	}

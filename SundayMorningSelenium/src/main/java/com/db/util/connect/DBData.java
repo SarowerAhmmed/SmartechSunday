@@ -15,14 +15,14 @@ public class DBData {
 		Class.forName("oracle.jdbc.driver.OracleDriver");
 		Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1522/orcl", "hr", "sarower");
 		Statement stmt = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
-		ResultSet rs = stmt.executeQuery("select * from GCRSHOPE");
+		ResultSet rs = stmt.executeQuery("select salary from employees");
 
 		List<String> columnValue = new ArrayList<String>();
 
 		try {
 			while (rs.next()) {
 				//System.out.println(rs.getString(1));
-				columnValue.add(rs.getString("URL"));
+				columnValue.add(rs.getString(1));
 
 			}
 		} catch (SQLException e) {

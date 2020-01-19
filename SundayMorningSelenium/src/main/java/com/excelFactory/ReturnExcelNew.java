@@ -20,11 +20,6 @@ import org.testng.annotations.Test;
 
 public class ReturnExcelNew {
 	
-
-	
-	String url;
-	String user;
-	String pass;
 	
 	static List<String[]> returnExcel(String directory, String sheetName) {
 
@@ -43,7 +38,8 @@ public class ReturnExcelNew {
 			DataFormatter df = new DataFormatter();
 
 			List<String[]> returningValue = StreamSupport.stream(sheet.spliterator(), false)
-					 .filter(e -> !df.formatCellValue(e.getCell(0)).equals("TC"))
+					 
+					.filter(e -> !df.formatCellValue(e.getCell(0)).equals("TC"))
 					.map(row -> new String[] { df.formatCellValue(row.getCell(0)), df.formatCellValue(row.getCell(1)),
 							df.formatCellValue(row.getCell(2)),df.formatCellValue(row.getCell(3)) })
 					.collect(Collectors.toList());
@@ -60,7 +56,11 @@ public class ReturnExcelNew {
 
 	
 	public static void main(String[] args) {
-		List<String[]> value=Objects.requireNonNull(returnExcel("./TestData/DataProviderData.xlsx", "Sheet1"));
+		
+		List<String[]> value=	ReturnExcelNew.returnExcel("./TestData/DataProviderData.xlsx", "Sheet1");
+		
+		
+		
 		
 		for(String[] i:value) {
 			
