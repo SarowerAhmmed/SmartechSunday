@@ -2,7 +2,6 @@ package com.generic.library;
 
 import java.io.IOException;
 
-import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -16,7 +15,7 @@ public class LoginInJava {
 	public static void getLogin(WebDriver driver) throws Throwable {
 		
 		
-		PropertyConfigurator.configure("Log4j.properties");
+		//PropertyConfigurator.configure("Log4j.properties");
 		driver.get(obj.getconfig("URL"));
 		MasterPageFactory pf = PageFactory.initElements(driver, MasterPageFactory.class);
 

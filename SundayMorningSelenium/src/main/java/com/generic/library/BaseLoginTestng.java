@@ -1,7 +1,5 @@
 package com.generic.library;
 
-import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -9,8 +7,6 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,12 +17,10 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.Status;
 import com.config.ObjectMap;
 import com.master.pagefactory.MasterPageFactory;
 import com.report.ExtentReport;
 import com.util.HighLighter;
-import com.util.TakeScreenShot;
 
 public class BaseLoginTestng extends ExtentReport {
 	private WebDriver driver;

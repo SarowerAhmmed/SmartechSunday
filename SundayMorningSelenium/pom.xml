@@ -18,48 +18,13 @@
 	</repositories>
 
 	<dependencies>
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>1.2.17</version>
-		</dependency>
 
 
-		<!-- <dependency> <groupId>com.vimalselvam</groupId> <artifactId>cucumber-extentsreport</artifactId> 
-			<version>3.1.0</version> </dependency> -->
-		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
-		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
 			<version>4.0.9</version>
 		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/com.github.mkolisnyk/cucumber-report-generator -->
-		<dependency>
-			<groupId>com.github.mkolisnyk</groupId>
-			<artifactId>cucumber-report-generator</artifactId>
-			<version>1.3.5</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.github.mkolisnyk/cucumber-runner -->
-		<dependency>
-			<groupId>com.github.mkolisnyk</groupId>
-			<artifactId>cucumber-runner</artifactId>
-			<version>1.3.5</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.github.mkolisnyk/cucumber-reports -->
-		<dependency>
-			<groupId>com.github.mkolisnyk</groupId>
-			<artifactId>cucumber-reports</artifactId>
-			<version>1.3.5</version>
-			<type>pom</type>
-		</dependency>
-		<dependency>
-			<groupId>org.freemarker</groupId>
-			<artifactId>freemarker</artifactId>
-			<version>2.3.26-incubating</version>
-		</dependency>
-
 
 
 		<dependency>
@@ -67,11 +32,6 @@
 			<artifactId>cucumber-extentsreport</artifactId>
 			<version>3.1.0</version>
 		</dependency>
-
-
-
-
-
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
@@ -135,10 +95,6 @@
 			<version>1.2.5</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
-		<!-- <dependency> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-surefire-plugin</artifactId> 
-			<version>2.21.0.</version> </dependency> -->
-		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -152,10 +108,7 @@
 			<artifactId>maven-dependency-plugin</artifactId>
 			<version>3.0.0</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/net.masterthought/maven-cucumber-reporting -->
-		<!-- <dependency> <groupId>net.masterthought</groupId> <artifactId>maven-cucumber-reporting</artifactId> 
-			<version>5.0.0</version> </dependency> -->
-		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+	
 
 
 		<dependency>
