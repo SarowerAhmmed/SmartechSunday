@@ -13,7 +13,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		plugin = { "pretty:target/cucumber-pretty",
 					"html:target/cucumber-html", 
 					"rerun:target/rerun.txt",
-					"json:target/cucumber1.json" }, 
+					"json:target/cucumber.json" }, 
 		
 		snippets = SnippetType.UNDERSCORE, 
 		features = {"src/test/resources/Login.feature" }, 

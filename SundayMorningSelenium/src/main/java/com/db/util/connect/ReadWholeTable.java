@@ -17,7 +17,7 @@ public class ReadWholeTable {
 		Connection connection = null;
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1522/orcl", "hr", "sarower");
+			connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521/orcl", "hr", "hr");
 			Statement stmt = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
 			rs = stmt.executeQuery(SQLqyeries);
 		} catch (ClassNotFoundException e) {
@@ -60,8 +60,7 @@ public class ReadWholeTable {
 	public static void main(String[] args) throws Throwable {
 
 
-		String query="Select * from employees "
-				+ "where salary= (Select max(salary) from employees)";
+		String query="Select * from employees";
 				
 		
 		ReadWholeTable.getDataTableColumn(query);

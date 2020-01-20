@@ -17,7 +17,7 @@ public class DatabaseList {
 		//String quary="select * from employees";
 		//System.out.println(DatabaseList.getDataTableColumn(quary,"SALARY"));
 		
-		testResult("TC_002", "Description", "Req", "Application", "P/F");
+		//testResult("TC_002", "Description", "Req", "Application", "P/F");
 	}
 	
 	

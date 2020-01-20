@@ -25,47 +25,5 @@ import cucumber.api.testng.TestNGCucumberRunner;
 
 public class TestNgRunner extends AbstractTestNGCucumberTests {
 
-	private TestNGCucumberRunner testNGCucumberRunner;
-	protected static  WebDriver driver;
-
-
 	
-	@BeforeClass(alwaysRun = true)
-	public void setUpClass() throws Exception {
-		testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
-		//driver= new WebDriverManager().getdriver();
-		System.out.println("Driver is up>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-		
-		
-	}
-
-	
-	
-	@Test(groups = "cucumber", description = "Runs Cucumber Feature", dataProvider = "features")
-	public void feature(CucumberFeatureWrapper cucumberFeature) {
-		testNGCucumberRunner.runCucumber(cucumberFeature.getCucumberFeature());
-
-	}
-
-	@DataProvider(parallel = true)
-	public Object[][] features() {
-		return testNGCucumberRunner.provideFeatures();
-
-	}
-	
-
-
-	@AfterClass(alwaysRun = true)
-	public void tearDownClass() throws Exception {
-		testNGCucumberRunner.finish();
-//		Reporter.loadXMLConfig("./CucumberExtentReport.xml");
-//		// Reporter.loadXMLConfig(new File("./CucumberExtentReport.xml"));
-//		Reporter.setSystemInfo("User Name", System.getProperty("user.name"));
-//		Reporter.setSystemInfo("Time Zone", System.getProperty("user.timezone"));
-//		Reporter.setSystemInfo("Machine", "Windows 10" + "64 Bit");
-//		Reporter.setSystemInfo("Selenium", "3.7.0");
-//		Reporter.setSystemInfo("Maven", "3.5.2");
-//		Reporter.setSystemInfo("Java Version", "1.8.0_151");
-
-	}
 }

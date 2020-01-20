@@ -1,5 +1,6 @@
 package com.stepdef;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -14,6 +15,7 @@ import com.util.HighLighter;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+
 
 public class LoginStepDef {
 	 WebDriver driver;
@@ -34,8 +36,7 @@ public class LoginStepDef {
 		 pf= PageFactory.initElements(driver, MasterPageFactory.class);
 		 a=10;
 	}
-
-	@Given("^Put GCR shop URL$")
+	@Given("Put GCR shop URL")
 	public void put_GCR_shop_URL() throws Throwable {
 		 obj = new ObjectMap();
 		driver.get(obj.getconfig("URL"));
