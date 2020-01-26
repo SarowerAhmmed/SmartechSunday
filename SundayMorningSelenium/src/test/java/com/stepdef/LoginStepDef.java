@@ -23,7 +23,7 @@ public class LoginStepDef {
 	 int a;
 	ObjectMap obj;
 	String name;
-	
+
 	@Given("^User need to open a browser$")
 	public void user_need_to_open_a_browser() throws Throwable {
 	    
