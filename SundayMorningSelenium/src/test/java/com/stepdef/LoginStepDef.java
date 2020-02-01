@@ -24,6 +24,8 @@ public class LoginStepDef {
 	ObjectMap obj;
 	String name;
 
+
+	
 	@Given("^User need to open a browser$")
 	public void user_need_to_open_a_browser() throws Throwable {
 	    
@@ -36,7 +38,7 @@ public class LoginStepDef {
 		 pf= PageFactory.initElements(driver, MasterPageFactory.class);
 		 a=10;
 	}
-	@Given("Put GCR shop URL")
+	@Given("^Put GCR shop URL$")
 	public void put_GCR_shop_URL() throws Throwable {
 		 obj = new ObjectMap();
 		driver.get(obj.getconfig("URL"));
